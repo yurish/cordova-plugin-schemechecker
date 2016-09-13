@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-coinfide-plugins-schemechecker" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SchemeChecker</name>
+    <js-module name="SchemeChecker" src="www/SchemeChecker.js">
+        <clobbers target="schemechecker" />
+    </js-module>
+	
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <array>
+                <string>coinfide</string>
+                <string>com.gemtechnologies.gem4me</string>
+            </array>
+        </config-file>
+        <config-file target="config.xml" parent="/*">
+            <feature name="SchemeChecker">
+                <param name="ios-package" value="SchemeChecker" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/SchemeChecker.swift" />
+    </platform>
+
+</plugin>
