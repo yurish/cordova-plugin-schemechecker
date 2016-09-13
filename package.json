@@ -11,13 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yurish/cordova-plugin-fingerprint-login.git"
+    "url": "git+https://github.com/yurish/cordova-plugin-schemechecker.git"
   },
   "keywords": [
-    "TouchID",
-    "Touch ID",
-    "Fingerprint",
-    "Biometric",
+    "Custom URL scheme",
     "ecosystem:cordova",
     "cordova-ios",
     "cordova-android"
@@ -31,7 +28,7 @@
   "author": "yurish",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yurish/cordova-plugin-fingerprint-login/issues"
+    "url": "https://github.com/yurish/cordova-plugin-schemechecker/issues"
   },
-  "homepage": "https://github.com/yurish/cordova-plugin-fingerprint-login#readme"
+  "homepage": "https://github.com/yurish/cordova-plugin-schemechecker"
 }
