@@ -7,16 +7,16 @@
     let scheme = command.arguments[0] as? String ?? ""
 
     if scheme.characters.count > 0 {
-        let result = UIApplication.sharedApplication().canOpenURL(NSURL(string:scheme)!);
+        let result = UIApplication.shared.canOpenURL(URL(string:scheme)!);
 
 
       pluginResult = CDVPluginResult(
         status: CDVCommandStatus_OK,
-        messageAsString: String(result)
+        messageAs: String(result)
       )
     }
 
-    self.commandDelegate!.sendPluginResult(
+    self.commandDelegate!.send(
       pluginResult, 
       callbackId: command.callbackId
     )

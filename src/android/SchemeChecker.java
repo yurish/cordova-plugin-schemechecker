@@ -13,7 +13,7 @@ import org.json.JSONObject;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class Echo extends CordovaPlugin {
+public class SchemeChecker extends CordovaPlugin {
     
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -34,12 +34,12 @@ public class Echo extends CordovaPlugin {
     }
     
     private void checkPackage(String packageName, CallbackContext callbackContext){
-        final PackageManager pm = getApplicationContext().getPackageManager();
+        final PackageManager pm = this.cordova.getActivity().getApplicationContext().getPackageManager();
         ApplicationInfo ai;
         try {
             ai = pm.getApplicationInfo( packageName, 0);
             callbackContext.success("true");
-        } catch (final NameNotFoundException e) {
+        } catch (final PackageManager.NameNotFoundException e) {
             callbackContext.success("false");
         }
     }

@@ -11,7 +11,7 @@
                 <param name="android-package" value="com.coinfide.cordova.plugin.schemechecker.SchemeChecker"/>
             </feature>
         </config-file>
-        <source-file src="src/android/SchemeChecker.java"/>
+        <source-file src="src/android/SchemeChecker.java" target-dir="src/com/coinfide/cordova/plugin/schemechecker"/>
     </platform>
 	
     <platform name="ios">
