@@ -1,5 +1,5 @@
 @objc(SchemeChecker) class SchemeChecker : CDVPlugin {
-  func checkScheme(command: CDVInvokedUrlCommand) {
+  func checkScheme(_ command: CDVInvokedUrlCommand) {
     var pluginResult = CDVPluginResult(
       status: CDVCommandStatus_ERROR
     )

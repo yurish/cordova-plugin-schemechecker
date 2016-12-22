@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-schemechecker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "\r\n    Check, if url scheme is available on the device\r\n  ",
   "cordova": {
     "id": "cordova-plugin-schemechecker",
